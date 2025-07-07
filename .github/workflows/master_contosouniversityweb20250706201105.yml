@@ -23,6 +23,11 @@ jobs:
         with:
           dotnet-version: '2.1'
 
+      - name: 'Use Node.js 20'
+        uses: NodeTool@0
+        with:
+          versionSpec: '16.x'
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
